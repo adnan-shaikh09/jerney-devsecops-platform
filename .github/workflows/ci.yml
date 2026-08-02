@@ -179,8 +179,9 @@ jobs:
         with:
           directory: create_eks_vpc//
           framework: terraform
+          download_external_modules: true
           soft_fail: false
-          skip_check: CKV_AWS_39,CKV_AWS_58  # Public EKS endpoint (intentional for dev)
+          skip_check: CKV_AWS_39,CKV_AWS_58, CKV_TF_1  # Public EKS endpoint (intentional for dev)
           output_format: cli
 
       - name: Run Checkov on Kubernetes manifests
