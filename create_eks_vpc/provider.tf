@@ -1,12 +1,12 @@
 provider "aws" {
   region = var.aws_region
- 
+
   default_tags {
     tags = {
-     Project = "Jerney"
-     Environment = var.environment
-     ManagedBy = "Terraform"
-   }
- }
+      Project     = "Jerney"
+      Environment = var.environment
+      ManagedBy   = "Terraform"
+    }
+  }
 
 }
