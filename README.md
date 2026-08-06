@@ -5,10 +5,6 @@
 ---
 
 ## 📖 Overview
-
-
-
-
 Jerney is an end-to-end DevSecOps project that demonstrates how modern applications are built, secured, containerized, deployed, and continuously delivered using industry-standard tools and best practices.
 
 The project showcases the complete software delivery lifecycle—from writing code to automated CI/CD, container security scanning, Kubernetes orchestration, GitOps deployment, and cloud infrastructure provisioning.
