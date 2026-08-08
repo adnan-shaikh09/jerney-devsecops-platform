@@ -181,9 +181,6 @@ jobs:
             --download-external-modules false \
             --soft-fail \
             --output cli
-            
-      - name: Install Checkov
-       run: pip3 install checkov
       
       - name: Run Checkov on Kubernetes manifests
         run: |
