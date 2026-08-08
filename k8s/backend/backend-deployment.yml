@@ -26,7 +26,7 @@ spec:
           effect: "NoSchedule"
       initContainers:
         - name: wait-for-db
-          image: ghcr.io/adnan-shaikh09/jerney-devsecops-backend:a49ef25
+          image: ghcr.io/adnan-shaikh09/jerney-devsecops-backend:e3ead40
           command:
             - sh
             - -c
@@ -39,7 +39,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: ghcr.io/adnan-shaikh09/jerney-devsecops-backend:a49ef25
+          image: ghcr.io/adnan-shaikh09/jerney-devsecops-backend:e3ead40
           ports:
             - containerPort: 5000
               protocol: TCP
