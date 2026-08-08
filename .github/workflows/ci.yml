@@ -233,13 +233,13 @@ jobs:
 
       - name: Update K8s manifest with new image tags
         run: |
-          IMAGE_TAG=${{ steps.sha.outputs.short }}
+          IMAGE_TAG=${{ steps.shai.outputs.short }}
 
           # Update backend deployment
           sed -i "s|image: .*jerney-devsecops-backend.*|image: ${BACKEND_IMAGE}:${IMAGE_TAG}|g" k8s/backend/backend-deployment.yml
 
           # Update frontend deployment
-          sed -i "s|image: .*jerney-devsecops-frontend.*|image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|g" k8s/frontend/frontend-deployment.ymle frontend image
+          sed -i "s|image: .*jerney-devsecops-frontend.*|image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|g" k8s/frontend/frontend-deployment.yml frontend image
 
           
           echo "✅ Updated images to tag: ${IMAGE_TAG}"
