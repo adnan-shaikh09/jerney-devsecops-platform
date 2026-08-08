@@ -2,10 +2,6 @@
 
 > A production-grade cloud-native full-stack application demonstrating modern DevOps and DevSecOps practices using Docker, Kubernetes, GitHub Actions, ArgoCD, Terraform, Trivy, PostgreSQL, Nginx, and AWS.
 
-
-
-
-
 ---
 
 ## 📖 Overview
