@@ -39,7 +39,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: adnan09/jerney-devsecops-backend:latest
+          image: docker.io/adnan09/jerney-devsecops-backend:e736ac7
           ports:
             - containerPort: 5000
               protocol: TCP
